@@ -3,6 +3,8 @@ source 'http://ruby.taobao.org'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.4'
 
+gem 'bootstrap-sass', '~> 3.1.1'
+
 # Use postgresql as the database for Active Record
 gem 'pg'
 
