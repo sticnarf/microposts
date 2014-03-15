@@ -39,7 +39,9 @@ end
 group :test do
   gem 'capybara', '~> 2.2.1'
   gem 'selenium-webdriver', '~> 2.40.0'
+  gem 'zeus', '~> 0.13.4pre2' # remove this unless using Rubymine
 end
+
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.1.2'
