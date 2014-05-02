@@ -6,7 +6,7 @@ gem 'rails', '4.0.4'
 gem 'bootstrap-sass', '~> 3.1.1'
 
 # Use postgresql as the database for Active Record
-gem 'pg'
+gem 'pg', '~> 0.17.1'
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0'
@@ -29,18 +29,22 @@ gem 'turbolinks'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 1.2'
 
+gem 'gravtastic', '~> 3.2.6'
+
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
   gem 'sdoc', require: false
 end
 
 group :development, :test do
+  gem 'thin'
   gem 'rspec-rails', '~> 2.14.1'
 end
 
 group :test do
   gem 'capybara', '~> 2.2.1'
   gem 'selenium-webdriver', '~> 2.40.0'
+  gem 'factory_girl_rails', '~> 4.4.1'
 end
 
 
