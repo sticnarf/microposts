@@ -53,8 +53,13 @@ test:
 
 production:
   adapter: postgresql
-  encoding: utf-8
-  database: microposts_production
+  database: <%=ENV['OPENSHIFT_APP_NAME']%>
+  username: <%=ENV['OPENSHIFT_POSTGRESQL_DB_USERNAME']%>
+  password: <%=ENV['OPENSHIFT_POSTGRESQL_DB_PASSWORD']%>
+  host:     <%=ENV['OPENSHIFT_POSTGRESQL_DB_HOST']%>
+  port:     <%=ENV['OPENSHIFT_POSTGRESQL_DB_PORT']%>
+  min_messages: ERROR
+  reconnect: false
   pool: 5
-  username: yilin
-  password:
+  timeout: 5000
+  encoding: utf8
